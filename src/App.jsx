@@ -6,24 +6,24 @@ import Footer from './footer'
 import EmployeeList from './CardEmployee'
 
 function App() {
-   return (
-     <div className='main'>
+  return (
+    <div className='main'>
         <Header /> 
-        <div className="container">
+    <div className="container">
           <section className="section-cards">
               <EmployeeList/>
           </section>
       
           <section className='section-forms'>
-             <Calculator />
+              <Calculator />
           </section>
     
-        </div>
-       <Footer/>
+    </div>
+        <Footer/>
     </div>
 
   )
-}
+};
 
-export default App
+export default App;
 

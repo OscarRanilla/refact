@@ -2,7 +2,7 @@ import  { useState } from 'react';
 import './Calculator.css'
 
 const Calculator=()=>{
-   
+
     const [num1, setNum1] = useState("");
     const [num2, setNum2] = useState("");
     const [result, setResult] = useState(null);
@@ -66,7 +66,6 @@ const Calculator=()=>{
             </div>
         </div>
         )
-       
-}
+};
 
 export default Calculator;

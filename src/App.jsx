@@ -1,19 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import lodearriba from './top'
+
+import Header from './top'
 import './App.css'
+import Calculator from './Calculator';
+import Footer from './footer'
+import EmployeeList from './CardEmployee'
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // const [agrupar, sumarMas] = useState(1)
-  // const [contabilizar, quitar] = useState(0)
-
-  return (
+   return (
+     <div className='main'>
+        <Header /> 
+        <div className="container">
+          <section className="section-cards">
+              <EmployeeList/>
+          </section>
+      
+          <section className='section-forms'>
+             <Calculator />
+          </section>
     
-    <>
-    </>
+        </div>
+       <Footer/>
+    </div>
+
   )
 }
 
 export default App
+

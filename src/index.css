@@ -24,16 +24,36 @@ a:hover {
 
 body {
   margin: 0;
+  margin: 0;
+	padding: 0;
+	border: 0;
+   /*min-width: 320px;
+  min-height: 100vh;*/
+}
+
+
+.header {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items:center;
+  justify-content: space-between;
+  background-color: #282c34;
+  padding: 10px 20px;
+  color: white;
+}
+
+.header-logo {
+  width: 100px;  
+  height: auto;  
+  border-radius: 8px;  
+  margin-right: auto;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+
 
 button {
   border-radius: 8px;

@@ -1,0 +1,61 @@
+.container-card {
+    display: flex;
+    flex-direction: row; /* Cambia de column a row */
+    flex-wrap: wrap; /* Permite que pasen a la siguiente línea si no caben */
+    gap:10px;
+    justify-content:space-between ; /* Centra las tarjetas en el contenedor */
+    padding: 20px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+
+}
+
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.hobbies {
+    font-style: italic;
+    color: #007bff;
+}
+
+
+
+@media screen and (max-width: 480px) {
+.container-card{
+    flex-direction: column; 
+    align-items: center;
+}
+
+.section-cards{
+    justify-content: space-around;
+}
+
+h2{
+    font-size: 19px;
+}
+
+}

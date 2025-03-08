@@ -1,32 +1,22 @@
-import Header from './top'
-import './App.css'
-import Calculator from './Calculator';
-import Footer from './footer'
-import EmployeeList from './CardEmployee'
+import employees from "./employee.json";
+import './CardEmployee.css'
 
-function App() {
-  //ejemplo para cambiar luego patata por el resultado que tengo que guardar en las variables para que haga la suma. Puedo usar las mismas variables para el resto */
+
+  const EmployeeList = () => {
     return (
-    // tengo que poner aquí el logo en lo de arriba. Que no se me olvide {almacenamiento}
-
-    <div className='main'>
-        <Header /> 
-        <div className="container">
-            <section className="section-cards">
-                <EmployeeList/>
-            </section>
-
-            <section className='section-forms'>
-                <Calculator />
-            </section>
-    
-        </div>
-        <Footer/>
-    </div>
-
-    
-    /* <pie /> */
-)
-}
-
-export default App
+      <div className="conta">
+        <h2>Empleados de la empresa cocreta</h2>
+        <ul className="container-card">
+          {employees.map((employee, index) => (
+            <div key={index} className="card">
+            <h3>{employee.name} {employee.lastName}</h3>
+            <p><strong>Edad:</strong> {employee.age}</p>
+            <p className="hobbies"><strong>Hobbies:</strong> {employee.hobbies.join(", ")}</p>
+          </div>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+  
+  export default EmployeeList;

@@ -4,8 +4,8 @@ import './CardEmployee.css'
 
 const EmployeeList = () => {
     return (
-        <div className="conta">
-            <h2>Empleados de la empresa cocreta</h2>
+        <div className="container-employee">
+            <h2>Empleados de la empresa Croquetas INC</h2>
             <ul className="container-card">
             {employees.map((employee, index) => (
             <div key={index} className="card">

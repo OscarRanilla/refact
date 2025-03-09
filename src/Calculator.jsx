@@ -57,7 +57,7 @@ const Calculator=()=>{
                 <button onClick={() => results("divide")}  >÷</button>
             </div>
             <div>{result !== null && (
-                <div>
+                <div id='resultado'>
                     <h3>Resultado:</h3>
                     <p>{result}</p>
                 </div>

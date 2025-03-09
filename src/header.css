@@ -1,0 +1,44 @@
+
+.header {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* mejor look */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+}
+
+.logo-container {
+    background: white; /* Fondo para resaltar el logo */
+    padding: 10px;
+    border-radius: 50%; /* contenedor completamente redondo */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más profunda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1em;
+    border-radius: 50%; /* imagen del logo redonda */
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: translateX(10px) rotate(10deg) scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte al hacer hover */
+}
+
+/* Animación de carga */
+@keyframes logo-load {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

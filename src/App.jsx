@@ -1,5 +1,4 @@
-
-import Header from './top'
+import Header from './header'
 import './App.css'
 import Calculator from './Calculator';
 import Footer from './footer'
@@ -14,7 +13,7 @@ function App() {
               <EmployeeList/>
           </section>
       
-          <section className='section-forms'>
+          <section className='section-calculator'>
               <Calculator />
           </section>
     

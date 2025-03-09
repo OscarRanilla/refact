@@ -1,79 +1,44 @@
 
-.main{
-  display: flex;
-  flex-direction: column;
-  
+body {
+  background-image: url("/croquettes-2795548.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-
-.container{
+.container {
   display: flex;
-  flex-direction: row; 
-
+  flex-direction: row;
   width: 100%;
-  gap: 10px;  
+  gap: 10px;
 }
 
-.section-cards{
-  display: flex;
-   width: 85%; /* Más ancho */
-  background-color: #3498db; 
+.section-cards,
+.section-calculator {
+  background-color: rgba(255, 255, 255, 0.1); /* Totalmente transparente */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.section-cards {
+  width: 85%;
   text-align: center;
 }
 
-.section-forms{
-  width: 15%; /* Menos ancho */
-  background-color: #2ecc71;
+.section-calculator {
+  width: 15%;
 }
 
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-
-
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .section-cards, .section-calculator {
+    width: 90%;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .container{
-      flex-direction: column; 
-      align-items: center;
-}
-
-  .section-cards{
-    display: flex;
-     width: 100%; /* Más ancho */
-    background-color: #3498db; 
-    text-align: center;
-}
-  .section-forms{
-    width: 100%; /* Menos ancho */
-    background-color: #2ecc71;
-  }
-  
 }
